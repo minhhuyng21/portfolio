@@ -1,0 +1,140 @@
+/* styles.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body {
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+  line-height: 1.6;
+} */
+body {
+  margin: 0; /* Removes any default margin around the body */
+  height: 100vh; /* Sets the height of the body to cover the full viewport */
+  background: linear-gradient(-45deg, #a403e3, #02e6ff, #FFB374, #FF55FF, #D684B6);
+  /* A diagonal gradient with multiple color stops */
+  background-size: 400% 400%; /* Makes the gradient much larger than the viewport */
+  animation: bg 10s ease infinite; /* Animates the gradient using the 'bg' keyframes */
+}
+
+/* Keyframes define how the gradient background moves */
+@keyframes bg {
+  0% {
+      background-position: 0% 50%; /* Starts the gradient at the left-middle */
+  }
+  50% {
+      background-position: 100% 100%; /* Moves the gradient to the bottom-right */
+  }
+  100% {
+      background-position: 0% 50%; /* Moves the gradient back to the left-middle */
+  }
+}
+
+
+.navbar {
+  display: flex;
+  /* justify-content: space-between; */
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #000000;
+  z-index: 1000; }
+  
+  
+/* .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+} */
+
+.nav-links a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ff69d5;
+}
+
+.theme-toggle {
+  cursor: pointer;
+}
+
+.content {
+  margin-top: 80px; /* Tạo khoảng cách giữa navbar và nội dung */
+  max-width: 800px;
+  /* margin: 50px auto; */
+  margin: 50px 0 0 0;
+  text-align: left; /* Căn giữa các phần tử trong nội dung */
+  padding: 0 50px; /*Thêm khoảng cách hai bên để đảm bảo không bị dính sát vào mép màn hình*/
+}
+
+/* .intro p {
+  margin: 10px 0;
+} */
+.hey {
+  font-size: 2rem;
+}
+.name {
+  font-size: 5rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #000000, #000000);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.description {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: white;
+}
+
+/* .buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+} */
+.buttons {
+  display: flex; /* Sử dụng flexbox để căn chỉnh nút */
+  flex-direction: row; /* Các nút xếp theo hàng ngang */
+  justify-content: flex-start; /* Căn tất cả nút sang trái */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  gap: 10px; /* Khoảng cách giữa các nút */
+  margin-top: 50px; /* Khoảng cách từ section trên */
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #444;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background-color: #444;
+}
+
+.email {
+  border-color: #f39c12;
+}
+
+.linkedin {
+  border-color: #0077b5;
+}
+
+.upwork {
+  border-color: #14a800;
+}
+
+.github {
+  border-color: #6e5494;
+}

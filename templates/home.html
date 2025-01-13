@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+</head>
+<body>
+  <div style="background-image: url('assets/pexels-felixmittermeier-956981.jpg');"></div>
+  <header class="navbar">
+    <!-- <div class="logo">DR.</div> -->
+    <nav class="nav-links">
+      <a href="{{ url_for('home') }}">Home</a>
+      <a href="{{ url_for('chatbot') }}">Chatbot</a>
+      <a href="{{ url_for('projects') }}">Projects</a>
+      <a href="{{ url_for('resume') }}">Resume</a>
+      <a href="{{ url_for('contact') }}">Contact</a>
+    </nav>
+  </header>
+
+  <main class="content">
+    <section class="intro">
+      <p class="hey">Hey, I'm</p>
+      <h1 class="name">Nguyen Minh Huy</h1>
+      <p class="description">
+        I'm a student at Bui Thi Xuan High School. With the passion of mathematics and computer science, I'm stupid.
+      </p>
+    </section>
+    <section class="buttons">
+      <a href="minhhuy210108@gmail.com" class="btn email">Send an email</a>
+      <a href="https://linkedin.com" class="btn linkedin">LinkedIn</a>
+      <a href="https://upwork.com" class="btn upwork">Upwork</a>
+      <a href="https://github.com/minhhuyng21" class="btn github">Github</a>
+    </section>
+  </main>
+</body>
+</html>
